@@ -1,0 +1,31 @@
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.cartoon-container {
+  margin: 30px auto;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  max-width: 500px;
+}
+
+.cartoon-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 8px 20px;
+}
+
+.ml-2 {
+  margin-left: 10px;
+}

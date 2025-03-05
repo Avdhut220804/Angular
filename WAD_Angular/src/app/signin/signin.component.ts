@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -19,8 +19,9 @@ export class SigninComponent {
   
   errorMessage = '';
 
+  constructor(private router: Router) {}
+
   onSubmit() {
-    // TODO: Implement authentication logic
     console.log('Signing in with:', this.user);
     
     // Example validation
@@ -32,6 +33,11 @@ export class SigninComponent {
     // Clear error message
     this.errorMessage = '';
     
-    // TODO: Add actual authentication logic here
+    // For demo purposes, any non-empty username/password is considered valid
+    // You would replace this with real authentication logic
+    setTimeout(() => {
+      alert('Sign in successful!');
+      this.router.navigate(['/cartoon']);
+    }, 500);
   }
 }
