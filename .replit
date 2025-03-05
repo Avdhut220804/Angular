@@ -5,7 +5,7 @@ run = "ng serve"
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "npm serve"]
+run = ["sh", "-c", "cd WAD_Angular && ng serve --host 0.0.0.0"]
 
 [workflows]
 runButton = "Start Angular"
@@ -16,4 +16,4 @@ author = 39189187
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd WAD_Angular && ng serve"
+args = "cd WAD_Angular && ng serve --host 0.0.0.0"
