@@ -1,20 +1,62 @@
-
 .container {
-  max-width: 500px;
+  max-width: 450px;
   margin: 50px auto;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  color: #4a86e8;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button[type="submit"]:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.mt-3 {
+  margin-top: 20px;
+  text-align: center;
+  color: #555;
+}
+
+a {
+  color: #4a86e8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .form-control {
@@ -47,8 +89,4 @@ label {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 4px;
-}
-
-.mt-3 {
-  margin-top: 15px;
 }

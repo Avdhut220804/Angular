@@ -1,31 +1,67 @@
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  color: #4a86e8;
+  margin-bottom: 25px;
+  font-size: 32px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .cartoon-container {
   margin: 30px auto;
-  padding: 10px;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  padding: 15px;
+  border: 3px solid #4a86e8;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom right, #f9f9ff, #eef8ff);
   max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.cartoon-container:hover {
+  transform: scale(1.02);
 }
 
 .cartoon-image {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+  margin: 25px 0;
 }
 
 button {
-  margin: 10px 5px;
-  padding: 8px 20px;
+  margin: 10px 8px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .ml-2 {
-  margin-left: 10px;
+  margin-left: 15px;
 }
