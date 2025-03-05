@@ -1,0 +1,19 @@
+modules = ["nodejs-20", "web", "angular-node-20"]
+run = "ng serve"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "cd WAD_Angular && ng serve --host 0.0.0.0"]
+
+[workflows]
+runButton = "Start Angular"
+
+[[workflows.workflow]]
+name = "Start Angular"
+author = 39189187
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd WAD_Angular && ng serve --host 0.0.0.0"
